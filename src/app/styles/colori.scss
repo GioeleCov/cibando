@@ -1,0 +1,37 @@
+//colori principali
+$primary-color-1: #8e210b;
+$primary-color-2: rgb(170, 170, 170);
+
+
+//colori secondari
+$secondary-color-1: #481005;
+$secondary-color-2: rgb(170, 170, 170);
+
+//scala di grigi
+$grey-1: rgb(170, 170, 170);
+$grey-2: rgb(135, 132, 132);
+$grey-3: rgb(170, 170, 170);
+$grey-4: rgb(112, 112, 112);
+
+.p-inputtext {
+  border: none !important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.p-password {
+  width: 100%;
+}
+
+.p-inputtext:focus-within {
+  box-shadow: none !important;
+}
+
+#container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 15px;
+}
+

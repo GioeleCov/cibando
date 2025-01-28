@@ -1,0 +1,31 @@
+@import "../../../styles/colori.scss";
+
+.recipe-image {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top: 1px solid white;
+}
+
+h5 {
+  color: $primary-color-1;
+  font-weight: bold;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+p {
+  color: $grey-1;
+  font-size: small;
+}
+
+.recipe-date {
+  text-align: right;
+}
+
+.difficolta {
+  width: 130px;
+}

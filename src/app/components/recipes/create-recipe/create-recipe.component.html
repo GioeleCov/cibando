@@ -1,0 +1,33 @@
+<div class="card">
+    <form [formGroup]="form">
+      <div>
+        <label for="title">Titolo della ricetta:</label>
+        <input type="text" id="title" name="title" class="form-control" formControlName="title" required>
+      </div>
+      <div>
+        <label for="description">Descrizione</label>
+        <p-editor formControlName="description" [style]="{ height: '320px' }" />
+      </div>
+      <div>
+        <label for="image">Scrivi l'URL della foto</label>
+        <input type="text" id="image" name="image" class="form-control" formControlName="image">
+      </div>
+      <div>
+        <label for="title">Difficoltà</label>
+        <select class="form-control select" formControlName="difficulty">
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <div>
+        <label for="title">Pubblica la ricetta</label>
+      <input type="checkbox" value="true" formControlName="published">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary" (click)="this.onSubmit()">INSERISCI RICETTA</button>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,50 @@
+@import '../../../styles/colori.scss';
+
+.btn {
+  background-color: $primary-color-1;
+  color: white;
+}
+
+.terms-text {
+  color: $primary-color-1;
+  text-decoration: none;
+}
+
+.image-custom {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+.container-form {
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 3px solid $primary-color-1;
+  overflow: hidden;
+}
+
+.container-pass:focus-within {
+  border: 4px solid rgba(2, 74, 241, 0.211);
+  border-radius: 10px;
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-label {
+  padding-left: 35px;
+}
+

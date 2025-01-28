@@ -1,0 +1,29 @@
+.bg-red {
+  background-color: #8e210b!important;
+}
+
+header {
+  background-color: #8e210b!important;
+  padding-left: 20px;
+}
+
+.icona-cibando {
+  width: 60px;
+  margin-right: 5px;
+}
+
+.autenticato {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.profile-route {
+  text-decoration: none;
+  padding-right: 5px;
+  color: white;
+}

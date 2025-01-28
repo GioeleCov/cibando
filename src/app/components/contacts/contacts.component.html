@@ -1,0 +1,35 @@
+
+<div class="container-form">
+ <form [formGroup]="form" (ngSubmit)="onSubmit()" class="container-contacts">
+  <div>
+    <h3>Richiedi informazioni</h3>
+    <div class="form-group">
+      <label class="label" for="name">Nome</label>
+      <input class="inp" type="text" id="name" name="nome" formControlName="nome">
+    </div>
+    <div class="form-group">
+      <label class="label" for="email">Email</label>
+      <input class="inp" type="text" id="email" name="email" formControlName="email">
+    </div>
+    <div>
+      <p class="is-danger" *ngIf="form.controls.email.hasError('email')">
+        Il campo email deve contenere un indirizzo email valido
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="label" for="oggetto">Oggetto</label>
+      <input class="inp" type="text" id="oggetto" name="oggetto" formControlName="oggetto">
+    </div>
+    <div class="form-group">
+      <label class="label" for="messaggio">Messaggio</label>
+    </div>
+    <div>
+      <textarea class="message" id="messaggio" placeholder="Scrivi il tuo messaggio..." rows="4" name="messaggio" formControlName="messaggio"></textarea>
+    </div>
+    <div class="button-container">
+      <button [disabled]="!form.valid" class="butt" type="submit">Invia Messaggio</button>
+    </div>
+  </div>
+ </form>
+</div>
+
